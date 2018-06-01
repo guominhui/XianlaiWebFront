@@ -1,0 +1,90 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>帮助中心</title>
+        <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html,body,div,p,span,a{
+                margin: 0;padding: 0;
+            }
+            a{
+               text-decoration: none;
+
+           }
+            html,body{
+                height: 100%;background: #e7eaf2;overflow: hidden;
+            }
+            .top_out{
+                width: 100%;background: #30353d;height:70px;line-height: 70px;
+            }
+            .top{
+                max-width: 800px;margin: 0 auto;padding: 0 10px;
+            }
+            .top a{
+                color: #fff;text-decoration: none;
+
+            }
+            .top .out{
+                float: right;
+            }
+            .content_main{
+                width: 100%;background: #e7eaf2;padding-top: 10px;    height:100%;
+            }
+            .content_inside{
+                max-width: 800px;background: #fff;margin:0 auto;    height: 100%;
+            }
+            .content_inside h1{
+                height:78px;line-height:78px;border-bottom: 1px solid #e7e8ea;font-size: 20px;padding-left: 12px;
+            }
+            .content_inside h1 a{
+                color: #000;
+            }
+            .content_inside h1 .help_logo{
+                margin-right: 10px;vertical-align: middle;
+            }
+            .content_inside .content_title{
+                margin-top: 16px;padding-left: 30px;
+            }
+            .content_inside .content_title .title{
+                line-height: 36px;height: 36px;
+            }
+            .content_inside .content_title .title .title_name{
+                font-size: 16px;color: #000;font-weight: bold;text-decoration: none;
+            }
+            .content_inside .content_title .title .title_logo{
+                vertical-align: middle;margin-right: 8px;
+            }
+            @media screen and (max-width:700px) {
+                .top_out{
+                    height: 50px;line-height: 50px;
+                }
+                .content_inside h1{
+                    height:50px;line-height:50px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top_out">
+            <div class="top">
+                <a href="/account/toTargetPage?t=1517304888928">返回</a>
+                <a href="/login/logout?t=1517304888928" class="out">退出</a>
+            </div>
+        </div>
+        <div class="content_main">
+            <div class="content_inside">
+                <h1><img class="help_logo" src="/resources/image/helpCenter/help_logo.png" height="24" alt=""><a href='javascript:;'>帮助中心</a></h1>
+                <div class="content_title">
+                    <p class="title">
+                        <img class="title_logo" src="/resources/image/helpCenter/title1_logo.png" height="19" alt=""><a class="title_name" href="/helpCenter/toClubGuide?t=1517304888928">俱乐部使用指南——代理版</a>
+                    </p>
+                    <p class="title">
+                        <img class="title_logo" src="/resources/image/helpCenter/title2_logo.png" height="19" alt=""><a class="title_name" href="/helpCenter/toAgentGuide?t=1517304888928">俱乐部常见问题及解答</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

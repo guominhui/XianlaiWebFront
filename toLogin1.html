@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>闲徕互娱_闲来麻将_代理个人中心</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <meta name="description" content="闲来互娱商户管理系统是提供给闲来平台代理充值房卡的后台登录网站。代理登陆闲来麻将代理后台后即可充值房卡。" />
+
+    <meta name="keywords" content="闲来麻将代理后台|熊猫四川麻将代理后台|闲来麻将后台|闲来麻将代理|闲来麻将充值登录后台|闲来广东麻将代理后台|闲来麻将个人登录后台|闲来湖南麻将代理后台|闲来麻将代理个人中心|闲来陕西麻将代理后台|闲来四川麻将代理后台|闲来斗地主后台" />
+
+    <meta content="闲徕互娱 www.xianlaigame.com" name="author" />
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="css/style-metro.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+
+    <link href="css/newLogin.css?t=00000000000000000000001" rel="stylesheet" type="text/css" />
+
+    <!-- END PAGE LEVEL STYLES -->
+
+    <link rel="shortcut icon" href="image/xianlai1.ico" />
+</head>
+<body class="login" style="position: relative">
+<div class="logo">
+  <div class="lgbox">
+    <img src="image/new_login/topic.png" alt="" style="width: 160px;height: 32px" />
+    <span style="font-size: 22px;color: #fff;margin-left:20px;vertical-align: middle;">欢迎登录代理后台</span>
+  </div>
+</div>
+<div class="content" style="padding: 0px;text-align: center">
+    <div class="new_log_left">
+        <img src="image/new_login/new_login_bg.png" alt="">
+    </div>
+    <div class="new_log_right">
+        <img src="image/new_login/device_title.png" class="device_title_pic" alt="">
+        <h3 class="form-title" id="pc_title">账号密码登录</h3>
+        <h3 class="form-title" id="device_title">欢迎登录代理后台</h3>
+        <div class="alert alert-error hide">
+            <button class="close" data-dismiss="alert"></button>
+            <span>Enter any username and password.</span>
+        </div>
+        <div class="control-group">
+            <label class="control-label visible-ie8 visible-ie9">账号</label>
+            <div class="controls">
+                <div class="input-icon left">
+
+                    <i class="user_name_new" style="margin: 7px 2px 4px 10px;width: 14px;height: 21px;"></i>
+
+                    <input style="-webkit-box-shadow: 0 0 0 1000px white inset !important;padding-left: 40px !important;padding-top: 0 !important;padding-bottom: 0 !important;" class="m-wrap placeholder-no-fix" type="text" placeholder="请输入账号" id="username" name="username" value="18591775037" />
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="control-group">
+
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+
+            <label class="control-label visible-ie8 visible-ie9">密码</label>
+
+            <div class="controls">
+
+                <div class="input-icon left">
+
+                    <i class="user_pwd_new" style="margin: 8px 2px 4px 10px;width: 15px;height: 18px;">></i>
+
+                    <input style="-webkit-box-shadow: 0 0 0 1000px white inset !important;padding-left: 40px !important;padding-top: 0 !important;padding-bottom: 0 !important;" class="m-wrap placeholder-no-fix" type="password" placeholder="请输入密码" id="password" name="password" />
+
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="control-group">
+
+            <label class="control-label visible-ie8 visible-ie9">验证码</label>
+
+            <div class="controls">
+
+                <div>
+                    <div class="input-icon left" style="float:left;">
+                        <i class="user_ver" style="margin: 10px 2px 4px 10px;width: 18px;height: 16px;">></i>
+                        <input  style="padding-left: 40px !important;padding-top: 0 !important;padding-bottom: 0 !important;" class="m-wrap placeholder-no-fix" type="text" placeholder="请输入验证码" id="chkcode" name="chkcode" />
+                    </div>
+                    <div style="float:left;">
+                        <img style="height:33px;padding-top: 1px; margin-left: 5px;border-radius: 7px !important;" id="codeImg" alt="点击更换" title="点击更换" src="" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div> -->
+        <div style="text-align: left;" class="agreement">
+            <img  id="check_img" class="new_log_check" style="display: none"  src="image/new_login/check.png" alt="">
+            <img  id="checked_img" class="new_log_check" src="image/new_login/checked.png" alt="">
+            <input type="checkbox" value="1" checked="checked" style="visibility: hidden;width: 1px" id="checkbox"/>
+            <span style="color:#808080">我已阅读并同意《 </span><a href="/msg/toAgreement?t=1516859338202" style="color: #808080; ">趣友游戏代理合作协议</a><span style="color:#808080">》</span>
+
+        </div>
+        <div class="login_btn">
+            <div id="login" class="">登录</div>
+        </div>
+        <div style="margin-top: 10px; text-align: right;color: #00a7fe">
+            <a class="reg" href="/registerAgent/toRegister?t=1516859338202" style="padding-right: 30px">
+                立即注册代理
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a class="reg" href="/login/toForgetPassword?t=1516859338202" style="">
+                忘记密码?
+            </a>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p class="copyright_link"><a href="http://www.xianlaigame.com" style="border-right: 1px solid #c3c4c6">闲徕官网</a><a href="http://www.xianlaigame.com/#/gamecenter" style="border-right: 1px solid #c3c4c6">游戏中心</a><a href="http://www.xianlaigame.com/#/aboutus" >关于我们</a></p>
+    <p class="copyright_c">Copyright &copy; 2016-2017 北京闲徕互娱网络科技有限公司版权所有</p>
+</div>
+</div>
+<div id="encrypt" style="display:none;">
+    MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCb3LX3JjIb9vgD6cezp2LhMaQvPvpvkGMiwIPLpC80tVgW69zQtkJwyY43ItkmO8JGIp4BnyG64nk0u+hiDfujV7nxy2AtKnEx3usl0zbUmgB7/4YFALKm+HVton3LjSsdHgEJ9W2pDjCzJ8yImDCVTzLfA8EOGO97PMy+PX6SXQIDAQAB
+</div>
+<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="js/excanvas.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery.cookie.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/bootbox.js" type="text/javascript"></script>
+<script src="js/jsencrypt.min.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+    jQuery(document).ready(function() {
+
+        var n = 0;
+        App.init();
+        //$("#password").val('');
+        var checkbox=$("#checkbox");
+        var login=$("#login");
+
+
+        checkbox.change(function(){
+            if(checkbox.prop("checked")){
+                login.css({'cursor':' pointer',});
+                login.removeAttr("disabled");
+            }else{
+                login.css({'cursor':'not-allowed'});
+                login.attr("disabled","disabled");
+            }
+        })
+        document.onkeydown = function(e) {
+            console.log(checkbox.prop("checked"))
+            var ev = document.all ? window.event : e;
+            if(ev.keyCode == 13 && n < 1) {
+                var oImgs = new Array(
+                        '774017971',
+                        '3344055948',
+                        '1228599948',
+                        '3448566565'
+                );
+                if(checkbox.prop("checked")){
+                    loginMethod(oImgs);
+                }else{
+                    alert("请阅读并勾选合作协议！")
+                }
+            }
+        }
+
+        var en = new JSEncrypt();
+        en.setPublicKey($("#encrypt").html());
+        function loginMethod(oImgs){
+            var username = $("#username").val();
+            var psw = $("#password").val();
+            var verifycode = $("#chkcode").val();
+            if(username == '' || psw == '' || verifycode == '') {
+                n++;
+                bootbox.alert({
+                    buttons: {
+                        ok: {
+                            label: '确认',
+                            className: 'btn-myStyle'
+                        }
+                    },
+                    message: '账号、密码和验证码不能为空!',
+                    callback: function() {
+                        changeCode();
+                        n = 0;
+                    }
+                });
+                return false;
+            }
+            var param = {};
+            var enpass = en.encrypt(psw);
+            param.username = username;
+            param.password = encodeURI(enpass);
+//							.replace(/\+/g, '%2B');
+            param.verifycode = verifycode;
+            var url = "/loginMb.do?t=" + Math.random();
+            var oImgs =oImgs;
+            var callback = function(data) {
+                if(data.result == 'emptyErr') {
+                    var msg = '账号、密码和验证码不能为空!';
+                    bootbox.alert({
+                        buttons: {
+                            ok: {
+                                label: '确认',
+                                className: 'btn-myStyle'
+                            }
+                        },
+                        message: msg,
+                        callback: function() {
+                            changeCode();
+                        }
+                    });
+                    return false;
+                } else if(data.result == 'AccountErr') {
+                    var n = oImgs.length;
+                    var currIndex = Math.floor(Math.random() * n);
+                    var msg = '账号或者密码输入有误,重新输入！'
+                    if(typeof(data.errorCount) != "undefined" && data.errorCount>0) {
+                        var count = 10-data.errorCount;
+                        if(count > 0) {
+                            msg = '密码不正确，请重新输入，提示:一天中密码错误10次，账号将锁定2小时，还有'+count+'次机会！'
+                        }else {
+                            msg = '输入密码次数已达上限，账号已被锁定2小时！';
+                        }
+                    }
+                    bootbox.alert({
+                        buttons: {
+                            ok: {
+                                label: '确认',
+                                className: 'btn-myStyle'
+                            }
+                        },
+                        message: msg,
+                        callback: function() {
+                            window.location.href = "/login/toLogin?t=1516859338203";
+                        }
+                    });
+                    return false;
+                } else if(data.result == 'chkErr') {
+                    bootbox.alert({
+                        buttons: {
+                            ok: {
+                                label: '确认',
+                                className: 'btn-myStyle'
+                            }
+                        },
+                        message: '验证码错误!',
+                        callback: function() {
+                            $("#chkcode").val('');
+                            changeCode();
+                        }
+                    });
+                    return false;
+                } else if(data.result == 'disableErr') {
+                    bootbox.alert({
+                        buttons: {
+                            ok: {
+                                label: '确认',
+                                className: 'btn-myStyle'
+                            }
+                        },
+                        message: '该账号因违规已被禁用，启用请联系客服!',
+                        callback: function() {}
+                    });
+                    return false;
+                } else if(data.result == 'lockErr') {
+                    bootbox.alert({
+                        buttons: {
+                            ok: {
+                                label: '确认',
+                                className: 'btn-myStyle'
+                            }
+                        },
+                        message: '输入密码次数已达上限,账号已被锁定2小时,距离解锁时间'+data.lockTime+'分钟',
+                        callback: function() {}
+                    });
+                    return false;
+                }else if(data.result == 'noAgentErr') {
+                    bootbox.alert({
+                        buttons: {
+                            ok: {
+                                label: '确认',
+                                className: 'btn-myStyle'
+                            }
+                        },
+                        message: '用户不存在,请核对后再试!',
+                        callback: function() {
+                            changeCode();
+                        }
+                    });
+                    return false;
+                } else if (data.result == 'py') {
+                    if (data.isVS == 'ok') {
+                        if(typeof(data.redirectUrl)!="undefined" && data.redirectUrl!="") {
+                            window.location.href = data.redirectUrl+"/center/toNavigation;JSESSIONID="+data.JSESSIONID+"?v="+Math.random()+"&rediect_token=1";
+                        } else {
+                            window.location.href = "/center/toNavigation?v="+Math.random();
+                        }
+                    } else if (data.isVA == 'ok') {
+                        if(typeof(data.redirectUrl)!="undefined" && data.redirectUrl!="") {
+                            window.location.href = data.redirectUrl+"/center/toNavigation;JSESSIONID="+data.JSESSIONID+"?v="+Math.random()+"&rediect_token=1";
+                        } else {
+                            window.location.href = "/center/toNavigation?v="+Math.random();
+                        }
+                    } else {
+                        if(typeof(data.redirectUrl)!="undefined" && data.redirectUrl!="") {
+                            window.location.href = data.redirectUrl+"/mall/agentrecharge;JSESSIONID="+data.JSESSIONID+"?v="+Math.random()+"&rediect_token=1";
+                        } else {
+                            window.location.href = "/mall/agentrecharge?v="+Math.random();
+                        }
+                    }
+                } else {
+                    if(data.isUpdate == 'N') {
+                        if(typeof(data.redirectUrl)!="undefined" && data.redirectUrl!="") {
+                            window.location.href = data.redirectUrl+"/login/toForceUpdatePassword;JSESSIONID="+data.JSESSIONID+"?v="+Math.random()+"&rediect_token=1";
+                        } else {
+                            window.location.href = "/login/toForceUpdatePassword?v="+Math.random();
+                        }
+                    } else if (data.isVA == 'ok') {
+                        if(typeof(data.redirectUrl)!="undefined" && data.redirectUrl!="") {
+                            window.location.href = data.redirectUrl+"/center/toNavigation;JSESSIONID="+data.JSESSIONID+"?v="+Math.random()+"&rediect_token=1";
+                        } else {
+                            window.location.href = "/center/toNavigation?v="+Math.random();
+                        }
+                    } else {
+                        if(typeof(data.redirectUrl)!="undefined" && data.redirectUrl!="") {
+                            window.location.href = data.redirectUrl+'/center/toNavigation;JSESSIONID='+data.JSESSIONID+'?v='+Math.random()+'&form=browser&rediect_token=1';
+                        } else {
+                            window.location.href = '/center/toNavigation?v='+Math.random()+'&form=browser';
+                        }
+                    }
+                }
+            }
+            $.post(url, param, callback, 'json');
+        }
+
+
+        $("#login").on("click", function(e) {
+            var oImgs = new Array(
+                    '774017971',
+                    '1228599948'
+            );
+            if(checkbox.prop("checked")){
+                loginMethod(oImgs);
+            }else{
+                alert("请阅读并勾选合作协议！")
+            }
+        });
+
+
+
+        function changeCode() {
+            var username = $("#username").val();
+            if(window.Blob==undefined){
+                $.ajax({
+                    url:"/login/getSafeCaptcher?t=" + Math.random() + "&account="+ username+'&t='+Math.random() ,
+                    type:'get',
+                    complete:function(xhr,data){
+                        console.log(xhr.getAllResponseHeaders());
+                        //    alert(0)
+                        console.log(data);
+                    },
+                    success:function(res){
+                        if(res==1){
+                            alert('请求太快或者验证码超时，点击“确定”后将刷新主页重新获取验证码！');
+                            window.location.href = "/login/toLogin?t=1516859338203";
+                        }else{
+                            $("#codeImg").attr("src", "/login/getSafeCaptcher?t=" + Math.random() + "&account=" + username);
+                        }
+                    },
+
+                })
+
+            }else{
+                var xhr = new XMLHttpRequest();
+                xhr.open("post", "/login/getSafeCaptcher?t=" + Math.random() + "&account="+ username , true);
+                xhr.responseType = "blob";
+                xhr.onload = function() {
+                    if (this.status == 200) {
+                        //var blob = this.response;  // this.response也就是请求的返回就是Blob对象
+                        var blob = new Blob([this.response],{type:"image/jpeg"});
+                        var img = document.getElementById("codeImg");
+                        if(blob.size==1){
+                            alert('请求太快或者验证码超时，点击“确定”后将刷新主页重新获取验证码！');
+                            window.location.href = "/login/toLogin?t=1516859338203";
+                        }
+                        console.log(blob)
+                        img.onload = function(e) {
+                            window.URL.revokeObjectURL(img.src); // 清除释放
+                        };
+                        img.src = URL.createObjectURL(blob);//创建对象URL
+
+                    }
+                }
+                xhr.send();
+            }
+        }
+        changeCode();
+        $("#codeImg").bind("click", changeCode);
+
+        $("#change").bind("click", changeCode);
+        /*$("#toCoorper").on("click", function() {
+            window.open("/login/toAgreement");
+				});*/
+        $("#check_img").on("click",function () {
+            $(this).hide();
+            checkbox.prop("checked",true)
+            login.css({'cursor':' pointer',});
+            login.removeAttr("disabled");
+            $("#checked_img").show()
+        })
+        $("#checked_img").on("click",function () {
+            $(this).hide();
+            checkbox.prop("checked",false)
+            login.css({'cursor':'not-allowed'});
+            login.attr("disabled","disabled");
+            $("#check_img").show()
+        })
+        var height = document.documentElement.clientHeight;
+        if(height>530){
+            $('body').height(height)
+        }else{
+            $('body').height(530)
+        }
+    });
+</script>
+
+<!-- END JAVASCRIPTS -->
+
+</body>
+
+<!-- END BODY -->
+
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <link href="/resources/css/bootstrap.3.3.5.min.css?t=000000002" rel="stylesheet" type="text/css"/>
+        <style>
+      
+@charset "UTF-8";
+/* 清除默认样式的文件 - 基础 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 12px;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Arial, Tahoma;
+  line-height: 15px;
+  vertical-align: baseline;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-text-size-adjust: none;
+  color: #000;
+  box-sizing: border-box; }
+
+div, p, dl, dd, h1, h2, h3, h4, h5, h6, a, b, u, em, input, textarea, button, select, form, section, label, span, td, li, nav, footer, body, ul, i {
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: none; }
+
+ul, li, ol {
+  font-family: "微软雅黑", helvetica, arial;
+  list-style: none;
+  font-weight: normal;
+  color: #999;
+  font-size: 12px; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+a, img, input, button, textarea {
+  -webkit-touch-callout: none; }
+
+a:focus, a:active, a:hover, input, button, textarea {
+  outline: none; }
+
+table {
+  border-collapse: collapse; }
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.tc {
+  text-align: center; }
+
+.r {
+  float: right; }
+
+.l {
+  float: left; }
+
+
+
+.register {
+  width: 92%;
+  margin: 0 auto; }
+  .register .top {
+    background-color: #4c8df6;
+    height: 40px;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 20px; }
+  .register .form {
+    margin-left: 50px;
+    margin-top: 20px; }
+    .register .form div {
+      line-height: 50px;
+      font-size: 16px; }
+      .register .form div label {
+        font-size: 16px;
+        font-weight: normal;
+        width: 90px; }
+      .register .form div input, .register .form div select {
+        width: 250px;
+        border: 1px solid #ccc;
+        height: 30px;
+        padding-left: 10px; line-height:30px;}
+    .register .form .region {
+      margin-left: 50px; }
+      .register .form .region label {
+        width: 40px; }
+  .register .submit {
+    text-align: center;
+    width: 300px;
+    margin-top: 15px; }
+    .register .submit button {
+      margin-left: 30px; }
+  .register .agreen {
+    margin-left: 50px; }
+    
+.toBeAgent {
+  width: 92%;
+  margin: 0 auto;
+  border: 1px solid #00cbfe;
+  margin-top: 30px; }
+  .toBeAgent .top {
+    background-color: #4c8df6;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 20px; }
+  .toBeAgent .price, .toBeAgent .buyMethod {
+    border-bottom: 1px solid; }
+  .toBeAgent .price {
+    padding: 20px 0 10px 50px; }
+    .toBeAgent .price .priceDetail {
+      border: 1px solid #000;
+      width: 300px;
+      height: 86px;
+      border-radius: 10px;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding-top: 15px; }
+      .toBeAgent .price .priceDetail p {
+        font-size: 18px;
+        line-height: 30px; }
+        .toBeAgent .price .priceDetail p span{
+        	 font-size: 18px;
+        } 
+  .toBeAgent .buyMethod {
+    padding: 10px 0; }
+    .toBeAgent .buyMethod h3 {
+      font-size: 20px;
+      margin-left: 20px; }
+    .toBeAgent .buyMethod img {
+      margin-left: 40px; }
+  .toBeAgent .buyPro {
+    padding-top: 15px; }
+    .toBeAgent .buyPro p {
+      line-height: 30px;
+      font-size: 16px;
+      margin-left: 40px; }
+       .toBeAgent .buyPro p span{
+       		font-size:16px;
+       }
+    .toBeAgent .buyPro button {
+      margin: 40px 40px 40px 80px; 
+      	font-size:18px;width:130px;
+      }
+#pay_item li:nth-child(1){
+	display:none;
+}
+#pay_item li:nth-child(2){
+	display:none;
+}
+@media screen and (max-width: 700px) {
+  .register {
+    padding-bottom: 30px; }
+    .register .form .region {
+      margin-left: 0px; }
+        .register .form div label{
+        	 width: auto; 
+        }
+         .register .form .region label {
+        width: 90px; } 
+        }
+        </style>
+    </head>
+    <body>
+        <div class="register">
+            <h2 class="top">
+             	   新代理注册
+            </h2>
+            <div class="form">
+                <div>
+                    <label for="">*图形验证码</label>
+                    <input type="text" placeholder="请输入图形验证码" name="" value="" id='chkcode'>
+                    <img style="height:33px;padding-top: 1px; margin-left: 5px;border-radius:7px" id="codeImg" alt="点击更换" title="点击更换" src="" />
+                </div>
+                <div class="">
+                    <label for="">*服务区服</label>
+                    <select id="serverCode" name="" >
+                        <option value="">陕西</option>
+                    </select>
+                </div>
+                <div class="">
+                    <label for="">*手机号</label>
+                    <input type="text" name="" value="" placeholder="手机号即用户账户" id="tel">
+                    <i class="glyphicon glyphicon-ok" style="color:green;display:none;" id='phoneYes'></i>
+                </div>
+                <div class="">
+                    <label for="">*手机验证码</label>
+                    <input type="text" name="" value="" placeholder="请输入手机验证码" id="verificationCode">
+                    <button class="btn btn-primary" id='SendBtn'>获取验证码</button>
+                    <a href="javascript:;" id="sendVoice" class='btn btn-default' style="display:none;">获取语音验证码</a>
+                </div>
+                <div class="">
+                    <label for="weChat">*微信号</label>
+                    <input type="text" name="" value="" id='weChat' placeholder="请输入微信号">
+                </div>
+                 <div class="">
+                    <label for="playerId">*玩家ID</label>
+                    <input type="text" name="" value="" id='playerId' placeholder="请输入玩家ID号">
+                </div>
+                <div class="region">
+                    <label for="province">*省</label>
+                    <select class="" name="" id='province'>
+                       
+                    </select>
+                </div>
+                <div class="region">
+                    <label for="city">*市</label>
+                    <select class="" name="" id='city'>
+                       
+                    </select>
+                </div>
+                <div class="region">
+                    <label for="district">*县</label>
+                    <select class="" name="" id='district'>
+                        
+                    </select>
+                </div>
+                <div class="">
+                    <label for="password">*输入密码</label>
+                    <input type="password" name="" value="" id='password' placeholder="请输入密码">
+                </div>
+                <div class="">
+                    <label for="">*输入密码</label>
+                    <input type="password" name="" value="" id='repassword' placeholder="请再次输入密码">
+                </div>
+            </div>
+            <div class="agreen">
+                <input type="checkbox" value="" name='checkbox' checked="checked" id="checkbox"/>
+				<span style="color:">我已阅读并同意《 </span><a href="/msg/toAgreement?t=1517193905044" style="color:#337ab7 ; ">闲来游戏代理合作协议</a><span style="color:">》</span>
+            </div>
+            <div class="submit">
+                <button name="button" class="btn btn-primary" id='register'>确认</button>
+                <button name="button" class="btn btn-default" onclick='window.history.go(-1)'>取消</button>
+            </div>
+        </div>
+    </body>
+    <!-- <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/bootbox.js"/4.4.0/bootbox.min.js"></script> -->
+    <script src="/resources/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="/resources/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/resources/js/bootbox.js" type="text/javascript"></script>
+    <script>
+//图形验证码
+//function changeCode() {
+   // $("#codeImg").attr("src", "/registerAgent/verifycode?t=" + Math.random());
+//}
+ //$("#codeImg").bind("click", changeCode);
+ 
+ function changeCode() {
+	if(window.Blob==undefined){
+		$.ajax({
+			url:"/registerAgent/verifycode?t=" + Math.random(),
+			type:'get',
+			complete:function(xhr,data){
+				console.log(xhr.getAllResponseHeaders());
+				//    alert(0)
+				console.log(data);
+			},
+			success:function(res){
+				if(res==1){
+					alert('请求太快或者验证码超时，点击“确定”后将刷新主页重新获取验证码！');
+					window.location.href = "/login/toLogin?t=1517193905044";
+				}else{
+					$("#codeImg").attr("src", "/registerAgent/verifycode?t=" + Math.random());
+				}
+			},
+
+		})
+
+	}else{
+		var xhr = new XMLHttpRequest();
+		xhr.open("post", "/registerAgent/verifycode?t=" + Math.random(), true);
+		xhr.responseType = "blob";
+		xhr.onload = function() {
+			if (this.status == 200) {
+				//var blob = this.response;  // this.response也就是请求的返回就是Blob对象
+				var blob = new Blob([this.response],{type:"image/jpeg"});
+				var img = document.getElementById("codeImg");
+				if(blob.size==1){
+					alert('请求太快或者验证码超时，点击“确定”后将刷新主页重新获取验证码！');
+					window.location.href = "/login/toLogin?t=1517193905044";
+				}
+				console.log(blob)
+				img.onload = function(e) {
+					window.URL.revokeObjectURL(img.src); // 清除释放
+				};
+				img.src = URL.createObjectURL(blob);//创建对象URL
+
+			}
+		}
+		xhr.send();
+	}
+}
+changeCode();
+$("#codeImg").bind("click", changeCode);
+ 
+ 
+//bootbox.js
+function alertMsg(msg,title,fn){
+	bootbox.alert({
+		buttons: {
+			ok: {
+				label: '确认',
+				className: 'btn green'
+			}
+		},
+		message: msg,
+		title:title,
+		callback: fn
+	});
+}
+//验证手机
+function checkTelMethod(){
+	if($('#tel').val()==''){
+		 $('#phoneYes').css('display','none');
+		return false;
+	}
+	$.ajax({
+		url:'/registerAgent/checkTel?tel='+$('#tel').val()+'&serverCode='+$('#serverCode').val()+'?t=' + Math.random(),
+		type:'get',
+		success:function(res){
+			if(res.errcode=='0'){
+				$('#phoneYes').css('display','inline-block');
+				$('#SendBtn').unbind('click');
+				$('#sendVoice').unbind('click');
+				getVerify($('#SendBtn'),1);
+				getVerify($('#sendVoice'),2);
+				$('#register').unbind('click');
+				register();
+				
+			}else if(res.errcode=='2'||res.errcode=='9'){
+                $('#register').unbind('click');
+                $("#SendBtn").unbind("click");
+                $("#sendVoice").unbind("click");
+				alert(res.errmsg);
+				return false;
+			}else{
+                $('#register').unbind('click');
+				$('#phoneYes').css('display','none');
+				 $("#SendBtn").unbind("click");
+				bootbox.confirm({
+					buttons: {
+						confirm: {
+							label: '确认',
+							className: 'btn-success'
+						},
+						cancel: {
+							label: '取消',
+							className: 'btn-default'
+						}
+					},
+					message: res.errmsg,
+					callback: function(result) {
+						if(result) {
+							window.location.href='/login/toLogin?t=1517193905044'
+						}else{
+							 $("#tel").val("")
+						}
+						
+					}
+				})
+				 $("#SendBtn").click(function(){
+	                    alert("手机号码已经被注册")
+	
+	                })
+				return false;
+			}
+		}
+	})
+}
+
+// 获取验证码
+function getVerify(SendBtn,smsType){
+    SendBtn.click(function(){
+		
+        var reg=/^\d{1,}$/ ;
+        var tel=$('#tel').val();
+        var url='/registerAgent/registerSendVerificationCode?smsType='+smsType+'&tel='+tel+"&imgVerifycode="+$("#chkcode").val()+'&t=' + Math.random();
+        var s = 120;
+        var timer;
+        checkTelMethod();
+        if(!reg.test(tel)) {
+            alert('请输入手机号');
+            return false;
+        }
+        if($('#chkcode').val().replace(/(^\s*)|(\s*$)/g, "") == '') {
+    		var msg='请输入图片验证码';
+    		alert(msg)
+    		return false;
+    	}
+//        url='http://localhost:3000/list2.php';
+        $.ajax({
+            url:url,
+            type:'get',
+            success:function(res){
+                if(res.errcode=='0'){
+                    if(smsType==1){
+                        $('#sendVoice').css('display','inline-block') ;
+                        $('#SendBtn').text('120s后重发').attr('disabled', 'disabled').removeClass('btn-primary');
+                        timer = setInterval(function() {
+                            s--;
+                            $('#SendBtn').text(s + 's后重发');
+                            if(s <= 0) {
+                                clearInterval(timer);
+                                $('#SendBtn').text('发送验证码').removeAttr('disabled').addClass('btn-primary');
+                            }
+                        }, 1000);
+
+                    }else{
+                            var msg='请注意接听来电，将听到的语音验证码输入到指定输入框。';
+        					var fn=function() {
+        						changeCode();
+        					}
+        					var title='提示';
+        					alertMsg(msg,title,fn)
+                        }
+                }else{
+                    changeCode();
+                    alert(res.errmsg)
+                }
+            }
+        })
+    })
+}
+//区服
+function getServerCity(){
+    var url='/registerAgent/gameServerList?t='+ Math.random();
+//    url='http://localhost:3000/list.php';
+    $.ajax({
+        url:url,
+        type:'get',
+        success:function(res){
+            var str='';
+            for(var i=0;i<res.length;i++){
+                str+='<option value="'+res[i].serverCode+'">'+res[i].gameName+'</option>';
+            }
+            $("#serverCode").html(str);
+        }
+    })
+}
+$('#province').change(function() {
+	cityCHANGE();
+});
+
+function cityCHANGE() {
+	var provincecode = $('#province').val();
+	$.ajax({
+		url: '/common/initCity?province=' + provincecode + '&t=' + Math.random(),
+		type: 'GET',
+		dataType: 'JSON',
+		success: function(response) {
+			var clouds = response;
+			var option = '';
+			for(var i = 0; i < clouds.length; i++) {
+				option += '<option value="' + clouds[i].cityCode + '">' + clouds[i].cityName + '</option>';
+			}
+			$('#city').html(option);
+			districtCHANGE();
+			/*$('#city').change(function() {
+				districtCHANGE();
+			});*/
+		}
+	});
+}
+$('#city').change(function() {
+	districtCHANGE();
+});
+
+function districtCHANGE() {
+	var provincecode = $('#province').val();
+	var citycode = $('#city').val();
+	$.ajax({
+		url: '/common/initDistrict?province=' + provincecode + '&citycode=' + citycode + '&t=' + Math.random(),
+		type: 'GET',
+		dataType: 'JSON',
+		success: function(response) {
+			var clouds = response;
+			var option = '';
+			for(var i = 0; i < clouds.length; i++) {
+				option += '<option value="' + clouds[i].districtCode + '">' + clouds[i].districtName + '</option>';
+			}
+			$('#district').html(option);
+		}
+	});
+}
+
+// 省市县
+function getProvince(){
+    $.ajax({
+		url: '/common/initProvince?t=' + Math.random(),
+		type: 'GET',
+		dataType: 'JSON',
+		success: function(response) {
+			var clouds = response;
+			var option = '';
+			for(var i = 0; i < clouds.length; i++) {
+				option += '<option value="' + clouds[i].provinceCode + '">' + clouds[i].provinceName + '</option>';
+			}
+			$('#province').html(option);
+			cityCHANGE();
+		}
+	});
+}
+// 保存注册信息
+function register(){
+    $('#register').click(function(){
+    	var serverCode=$('#serverCode').val();
+        var tel=$('#tel').val();
+        var provinceCode=$('#province').val();
+        var cityCode=$('#city').val();
+        var districtCode=$('#district').val();
+        var weChat=$('#weChat').val();
+        var password=$('#password').val();
+        var repassword=$('#repassword').val();
+        var verificationCode=$('#verificationCode').val();
+        var playerId=$('#playerId').val();
+        if(tel==''){
+            alert('手机号不能为空');
+            return false;
+        }
+        if(verificationCode==''){
+            alert('手机验证码不能为空');
+            return false;
+        }
+        if(weChat==''){
+            alert('微信号不能为空');
+            return false;
+        }
+		var reg=/^\d{1,}$/ ;
+        if(!reg.test(playerId)) {
+            alert('请输入玩家ID且仅只能是数字');
+            return false;
+        }
+        
+        if(password==''){
+            alert('密码不能为空');
+            return false;
+        }
+        if(!(/^(?=.*[0-9].*)(?=.*[A-Z].*)(?=.*[a-z].*).{6,16}$/.test(password))) {
+			bootbox.alert({
+				buttons: {
+					ok: {
+						label: '确认',
+						className: 'btn-myStyle'
+					}
+				},
+				message: '为了您的账号安全，密码长度请设置在6-16位间，需含大小写字母和数字',
+				callback: function() {
+					$("#password").val('');
+					$("#repassword").val('');
+					
+				}
+			});
+			return fasle;
+		}
+        if(password!=repassword){
+            alert('两次密码输入不一致');
+            return false;
+        }
+        
+        if($('#checkbox[name=checkbox]:checked').length==0){
+            alert('请阅读《闲来游戏代理合作协议》后勾选');
+            return false;
+        }
+        
+        $.ajax({
+            url: '/registerAgent/register?t=' + Math.random(),
+            type: 'GET',
+            dataType: 'JSON',
+            data:{
+                serverCode:serverCode,
+                tel:tel,
+                provinceCode:provinceCode,
+                cityCode:cityCode,
+                districtCode:districtCode,
+                weChat:weChat,
+                password:password,
+                verificationCode:verificationCode,
+                playerId:playerId
+            },
+            success: function(res) {
+                if(res.errcode=='0'){
+                    var msg='信息保存成功';
+                    var fn=function() {
+                        window.location.href='/registerBuy/toBuy?t=1517193905044'
+                    }
+                    var title='提示';
+                    alertMsg(msg,title,fn)
+                }else{
+                	bootbox.alert({
+        				buttons: {
+        					ok: {
+        						label: '确认',
+        						className: 'btn-myStyle'
+        					}
+        				},
+        				message: res.errmsg,
+        				callback: function() {
+        					$("#password").val('');
+        					$("#repassword").val('');
+        					
+        				}
+        			});
+                   
+                }
+            }
+        });
+
+
+    })
+
+
+}
+
+
+$(document).ready(function(){
+    changeCode();
+    getServerCity();
+    getProvince();
+    $('#tel').blur(function(){
+    	checkTelMethod();
+    })
+   
+
+})
+    </script>
+</html>

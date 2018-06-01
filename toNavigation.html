@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>闲徕互娱_闲来游戏_推广员代理个人中心_闲来麻将_熊猫麻将_代理后台</title>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta name="description" content="闲来互娱商户管理系统是提供给闲来平台代理充值房卡的后台登录网站。代理登陆闲来麻将代理后台后即可充值房卡。" />
+
+    <meta name="keywords" content="闲来麻将代理后台|熊猫四川麻将代理后台|闲来麻将后台|闲来麻将代理|闲来麻将充值登录后台|闲来广东麻将代理后台|闲来麻将个人登录后台|闲来湖南麻将代理后台|闲来麻将代理个人中心|闲来陕西麻将代理后台|闲来四川麻将代理后台|闲来斗地主后台|闲来麻将推广员后台|闲来推广员后台" />
+
+    <meta content="闲徕互娱 www.xianlaigame.com" name="author" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="css/bootstrap.min.css?t=20170928" rel="stylesheet" type="text/css"/>
+
+    <link href="css/bootstrap-responsive.min.css?t=20170928" rel="stylesheet" type="text/css"/>
+
+    <link href="css/font-awesome.min.css?t=20170928" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style-metro.css?t=20170928" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style.css?t=20170928" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style-responsive.css?t=20170928" rel="stylesheet" type="text/css"/>
+
+    <link href="css/uniform.default.css?t=20170928" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-select.css?t=20170928" rel="stylesheet" type="text/css"/>
+
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="css/chosen.css?t=20170928" rel="stylesheet"  type="text/css"/>
+    <link href="css/select2_metro.css?t=20170928" rel="stylesheet"  type="text/css"/>
+    <link href="css/DT_bootstrap.css?t=20170928" rel="stylesheet"  type="text/css"/>
+    <link href="css/center.css?t=20171205" rel="stylesheet"  type="text/css"/>
+
+    <!-- END PAGE LEVEL STYLES -->
+
+    <link rel="shortcut icon" href="image/xianlai1.ico" />
+    <script src="My97DatePicker/WdatePicker.js"></script>
+    <style>
+		p{margin: 0}
+		body{ background-color: #e7eaf2; }
+		.fl{ float: left; }
+		.fr{ float: right; }
+        .logo{ background-color: #30353d; position: fixed;z-index: 100;width: 100%;}
+		.welcome{color: #fff;}
+		.main{position: relative}
+        .right_icon{color: #808080}
+        @media screen and (max-width: 415px){
+            .main{margin: 0 auto;padding: 14px 0;width: 100%}
+            .welcome{font-size: 17px;margin-left: 5px;vertical-align: middle;}
+            .banner_icon{width: 31%;margin-left: 3%;vertical-align: middle;}
+            .center_container{width: 100%;}
+            .agent_info{ padding: 5% 6% 5% 5%; font-size: 14px;}
+            .info_title{line-height: 25px;font-size: 14px}
+			.info_content{font-size: 14px}
+            .info_card{font-size: 20px;line-height: 24px}
+            .nav_img{width: 55.5%;margin-bottom: 4%}
+			.nav_icon{margin-top: 4px}
+            .nav_icon>a{width: 27.3%;margin: 9% 3%;}
+            .nav_title{font-size: 14px}
+            .lamp{background:  #e7eaf2 url("image/new_login/lamp.png") no-repeat 3% 49%/4.5%;margin: 0 !important;height: 30px;  line-height: 30px;  font-size: 14px; padding-left: 40px;}
+        	.log_out{top:35%;font-size: 16px}
+			.tips{height: 56px;line-height: 56px;padding: 0 12px 0 20px;margin-top: 4px}
+			.right_icon{float: right;line-height: 56px;}
+		}
+        @media screen and (min-width: 415px) and (max-width: 809px){
+            .main{margin: 0 auto;padding: 14px 0;width: 100%}
+            .welcome{font-size: 24px;margin-left: 10px;vertical-align: middle;}
+            .banner_icon{width: 23%;margin-left: 3%;vertical-align: middle;}
+            .center_container{width: 100%;}
+            .agent_info{ padding: 5% 6% 5% 5%; font-size: 20px;}
+            .info_title{line-height: 25px;font-size: 14px}
+			.info_content{font-size: 14px}
+            .info_card{font-size: 24px;line-height: 28px}
+            .nav_img{width: 55.5%;margin-bottom: 4%}
+            .nav_icon{margin-top: 8px}
+            .nav_icon>a{width: 27.3%;margin: 5% 3%;}
+            .nav_title{font-size: 20px}
+            .lamp{background:  #e7eaf2 url("image/new_login/lamp.png") no-repeat 3% 49%/4.5%;margin: 0 !important;margin-top:8px;height: 36px;  line-height: 36px;  font-size: 18px; padding-left: 50px;}
+            .log_out{top:34%;font-size: 18px}
+            .tips{height: 56px;line-height: 56px;padding: 0 12px 0 20px;margin-top: 8px;    text-align: center;font-size: 16px;}
+        }
+        @media screen and (min-width: 810px){
+            .main{margin: 0 auto;padding: 20px 0;width: 801px}
+			.welcome{font-size: 24px;margin-left: 20px;vertical-align: middle;}
+            .banner_icon{width: 160px;height: 32px;vertical-align: middle;}
+			.center_container{ width: 801px; }
+			.agent_info{ padding: 28px 40px 28px 28px;font-size: 14px; margin-top: 8px}
+            .info_title{line-height: 25px;font-size: 14px}
+            .info_content{font-size: 14px}
+			.info_card{font-size: 28px;line-height: 28px}
+			.nav_icon{margin-top: 8px}
+            .nav_img{width: 76px;margin-bottom: 10px}
+            .nav_icon>a{width: 227px;margin: 42px 20px;}
+			.nav_title{font-size: 20px}
+			.lamp{background:  #ffffff url("image/new_login/lamp.png") no-repeat 3% 49%/2.5%;height: 42px; margin-top: 8px; line-height: 42px;  font-size: 16px; padding-left: 60px;}
+            .log_out{top:35%;font-size: 18px}
+            .tips{height: 56px;line-height: 56px;padding: 0 12px 0 20px;margin-top: 8px;    text-align: center;font-size: 16px;}
+		}
+		.log_out{color: #ffffff;text-decoration: none;position: absolute;right: 2%;}
+		.center_container{  margin: 0 auto; }
+		.agent_info{ background-color: #ffffff; overflow: hidden; }
+		.info_content{color: #808080;}
+		.info_card{color: #12b7ff;}
+		/*跑马灯*/
+		.lamp{color: #808080; display: none; }
+		.nav_icon{background-color: #ffffff;font-size: 0}
+		.nav_icon>a{display: inline-block;text-align: center;cursor: pointer;text-decoration: none;}
+		.nav_title{color: #000000}
+		.tips{background-color: #ffffff;cursor: pointer}
+		.first_msg{color: #808080;margin-left: 4px}
+    </style>
+    <style>
+        .activity_detail{ height: auto; margin: 9rem auto 0; width: 90%; background-size:contain; position: relative; }
+        .activity_bg_btn{ z-index: 0; }
+        .activity_close{ position: absolute; right: 0; top: 0; width: 30%; height: 20%; z-index: 100; cursor: pointer; }
+        .consumption_out{ cursor: pointer; }
+        .consumption_info>span{ font-weight: normal; color: #fdf802; font-size: 16px; vertical-align: bottom; }
+        .consumption_left{ display: inline-block; position: absolute; }
+        .consumption_left p{ color: #ffffff; font-weight: bold; font-family: SimHei; margin: 0; }
+        .consumption_on p{ background: url("image/activity/activity_choose.png") no-repeat 0 0 /100% 100% !important; text-shadow: 1px 1px 2px #fe8902 !important;  }
+        .consumption_on{ background-color: #fffde0; border-radius: 9px 0 0 9px !important; }
+        .consumption_right{ display: inline-block; position: absolute; padding-left: 10px; padding-right: 10px; cursor: pointer; }
+        .consumption_tip{ margin-bottom: 7px; font-weight: bold; }
+        .consumption_tip img{ margin-right: 3px; vertical-align: bottom; }
+        .consumption_out p{ background: url("image/activity/activity_unchoose.png") no-repeat 0 0 /100% 100%; text-shadow: 1px 1px 2px #15cfff;  }
+        @media screen and (max-device-width: 550px){
+            .activity_detail{ width: 315px; }
+            .consumption_right{ width: 194px; height: 186px; left: 95px; margin-top: 59px; }
+            .consumption_left{ left: 0; width: 95px; height: 193px; padding-top: 52px; }
+            .consumption_left p{ font-size: 12px; height: 31px; line-height: 31px; margin: 0 3px; text-align: left; padding-left: 7px; }
+            .consumption_out{ width: 97px; height: 35px; padding-top: 3px; margin-left: 4px; display: none; }
+            .consumption_on{ margin-right: -10px; }
+            .consumption_tip img{ height: 19px; }
+            .consumption_tip{ font-size: 14px; margin-bottom: 3px; }
+            .activity_click{ text-align: center; }
+            .activity_click img{ width: 80px; }
+            .consumption_text{ font-size: 12px; line-height: 19px; }
+            .consumption_time{ font-size: 13px; }
+        }
+        @media screen and (min-device-width: 551px){
+            .activity_detail{ width: 455px; }
+            .consumption_right{ width: 288px; height: 282px; left: 136px; margin-top: 86px; }
+            .consumption_left{ left: 0; width: 136px; height: 283px; padding-top: 75px; }
+            .consumption_left p{ font-size: 18px; height: 40px; line-height: 40px; margin: 0 4px; padding-left: 6px; }
+            .consumption_out{ width: 137px; height: 48px; padding-top: 8px; margin-left: 8px; }
+            .consumption_on{ margin-right: -10px; }
+            .consumption_tip img{ height: 22px; }
+            .consumption_tip{ font-size: 19px; }
+            .activity_click{ position: absolute; bottom: 33px; left: 101px; }
+            .activity_click img{ width: 90px; }
+            .consumption_text{ font-size: 16px; line-height: 26px; }
+            .consumption_time{ font-size: 17px; }
+        }
+        #activity_center{display: none}
+        .activity_con{display:none;position:fixed;width:100%;height:100%;top;0;left:0;  background-color :rgba(0, 0, 0, .5);z-index: 9991}
+        /*客服*/
+        #YSF-BTN-HOLDER{display: none;width: 0; height: 0;}
+    </style>
+</head>
+                <div class="activity_con" id="consumption">
+                    <div class="activity_detail">
+                        <div class="activity_close" id="consumption_close"></div>
+                        <div class="consumption_left" id="consumption_list">
+
+                        </div>
+                        <div class="consumption_right" id="consumption_to">
+                            <div class="consumption_tip"><img  src="image/activity/activity_time.png" alt="">活动时间:</div>
+                            <div id="consumption_time" class="consumption_time" style="color: #ef6615;font-weight:bold;border-bottom: 1px solid #e8e5cd;padding-bottom: 7px;margin-bottom: 6px"></div>
+                            <div class="consumption_tip"><img src="image/activity/activity_warn.png" alt="">活动规则:</div>
+                            <div id="consumption_text" class="consumption_text"></div>
+                            <div  class="activity_click"><img  src="image/activity/activity_go.png" alt=""></div>
+                        </div>
+                        <img src="image/activity/common_bg.png" alt="" class="activity_bg_btn">
+                    </div>
+                </div>
+				<div class="logo" id="logo">
+					<div class="main" style="">
+                        <img class="banner_icon" src="image/new_login/topic.png" alt="" />
+                        <span class="welcome" style="">欢迎登录代理后台</span>
+                        <a class="log_out" href="#">
+                            退出
+                        </a>
+					</div>
+				</div>
+				<div class="center_container" id="center_container">
+					<div class="lamp" id="lamp"><marquee onMouseOut="this.start()" onMouseOver="this.stop()" behavior="scroll" id="marquee"></marquee></div>
+					<div class="agent_info">
+						<div class="fl" style="width: 78%">
+							<p class="info_title"><span>ID:</span><span class="info_content" id="agentId"></span></p>
+							<p class="info_title"><span>游戏:</span><span class="info_content" id="gameName"></span></p>
+						</div>
+						<div class="fr" style="text-align: center;">
+							<p class="info_card" id="card2"></p>
+							<p class="info_content">当前房卡</p>
+						</div>
+					</div>
+					<div class="nav_icon">
+                            <a href="/agent/toFriendGiftCard?t=1516859636875">
+                                <img class="nav_img" src="image/nav_center/toFriendGiftCard.png" alt="">
+                                <div class="nav_title">给玩家充卡</div>
+                            </a>
+                                <a  href="/mall/agentrecharge?t=1516859636907">
+                                    <img class="nav_img" src="image/nav_center/agentrecharge.png" alt="">
+                                    <div class="nav_title">购买房卡</div>
+                                </a>
+                                <a href="/agent/toBuyRecord?t=1516859636922">
+                                    <img class="nav_img" src="image/nav_center/toBuyRecord.png" alt="">
+                                    <div class="nav_title">购卡统计</div>
+                                </a>
+                            <a  href="/agent/toSystemReward?t=1516859636922">
+                                <img class="nav_img" src="image/nav_center/toSystemReward.png" alt="">
+                                <div class="nav_title">房卡奖励</div>
+                            </a>
+                            <a  id="activity_center">
+                                <img class="nav_img" src="image/nav_center/activitys.png"   alt="" id="activity_center_bg">
+                                <div class="nav_title">活动中心</div>
+                            </a>
+                            <a  href="/gonghui/index.html?t=1516859636922">
+                                <img class="nav_img" src="image/nav_center/gonghui.png" alt="">
+                                <div class="nav_title">俱乐部</div>
+                            </a>
+                                <a href="/agent/toMyAgent?t=1516859636941">
+                                    <img class="nav_img" src="image/nav_center/toMyAgent.png" alt="">
+                                    <div class="nav_title">我的代理</div>
+                                </a>
+                            <a  href="/agent/toNoticeIndex?t=1516859636956">
+                                <img class="nav_img" src="image/nav_center/toNoticeIndex.png" alt="">
+                                <div class="nav_title">活动公告</div>
+                            </a>
+                        <a  href="/agent/toMyInfo?t=1516859636956">
+                            <img class="nav_img" src="image/nav_center/toMyInfo.png" alt="">
+                            <div class="nav_title">我的信息</div>
+                        </a>
+                        <a id="kf">
+                            <img class="nav_img" src="image/nav_center/service.png" alt="">
+                            <div class="nav_title">联系客服</div>
+                        </a>
+					</div>
+					<div id="toTips" class="tips"><span>[攻略]</span><span id="tips" class="first_msg">暂无活动</span><span class="right_icon icon-chevron-right"></span></div>
+				</div>
+
+				<!-- END CONTAINER -->
+
+				<!-- BEGIN FOOTER -->
+	<!-- BEGIN CORE PLUGINS -->
+
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--[if lt IE 9]>
+
+	<script src="/resources/js/excanvas.min.js"></script>
+
+	<script src="/resources/js/respond.min.js"></script>
+
+	<![endif]-->
+
+	<script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+
+	<script src="js/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="js/jquery.uniform.min.js" type="text/javascript"></script>
+
+	<script src="js/commen/util.js?t=00000000012" type="text/javascript"></script>
+	<script src="js/bootbox.js" type="text/javascript"></script>
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261722399'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261722399%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+	<style>
+	#cnzz_stat_icon_1261722399{display:none;}
+	</style>
+	<!-- END CORE PLUGINS -->
+	<!--<script>
+		$.ajax({
+			url: '/gameapi/getUserInfo?t=' + Math.random(),
+			type: 'GET',
+			dataType: 'JSON',
+			success: function(response) {
+				console.log(response);
+				$("#mycounttop").html('剩余房卡 ：' + response.cardNum + ' 剩余钻石：' + response.diamond);
+			},
+			error: function() {
+				bootbox.alert({
+					buttons: {
+						ok: {
+							label: '确认',
+							className: 'btn green'
+						}
+					},
+					message: '请求失败，请联系管理员',
+					callback: function() {}
+				});
+			}
+		});
+	</script>-->
+
+				<!-- END FOOTER -->
+
+				<!-- BEGIN PAGE LEVEL PLUGINS -->
+
+				<script type="text/javascript" src="js/select2.min.js"></script>
+
+				<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+
+				<script type="text/javascript" src="js/DT_bootstrap.js"></script>
+
+				<!-- END PAGE LEVEL PLUGINS -->
+
+				<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+				<script src="js/app.js"></script>
+
+				<script src="js/table-editable.js"></script>
+				<script src="js/jquery.validate.min.js"></script>
+				<script src="js/commen/sethead.js" type="text/javascript"></script>
+        <!-- 客服接入 -->
+        <script src="https://qiyukf.com/script/6dfc0f708ba3509992e8dbcabe3c6011.js" charset="utf-8"></script>
+        <script type='text/javascript'>
+function kefu(name,agentId,serverName,tel,card,groupid,robotShuntSwitch){
+  var account;
+  if(tel.length == 11){
+    account = tel.replace(/(\d{3})(\d{4})(\d{4})/,"$1****$3");
+  }else{
+    account = tel;
+  }
+  ysf.on({
+    'onload': function(){
+      ysf.config({
+        uid: agentId,  //代理id做标识
+        name: name,   //姓名
+        groupid: groupid, // 客服组id
+        robotShuntSwitch:robotShuntSwitch,
+        data:JSON.stringify([
+          {"key":"serverCode","label":"区服","value":serverName},
+          {"key":"agentId","label":"代理ID","value":agentId},
+          {"key":"account","label":"账号","value":account},
+          {"key":"card","label":"房卡数量","value":card}
+        ])
+      });
+    }
+  })
+}
+$(document).ready(function(){
+  var name = 'hollo';
+  var agentId = '334723224';
+  var serverName = '';
+  var tel = 'pQPoN7g4vQ4OCwmWFGRKEw==';
+  var card;
+  var serverCode = 'shanxi2_db';
+  var groupid;
+  if(serverCode == 'tianjin_db'){  //天津
+    groupid = "431937";
+  }else if(serverCode == 'gansu_db'){  //甘肃
+    groupid = "412066";
+  }else if(serverCode == 'shanxi2_db'){  //陕西
+    groupid = "414990";
+  }else if(serverCode == 'liaoning_db'){  //辽宁
+    groupid = "444974";
+  }else if(serverCode == 'doudizhu_db'){  //斗地主
+    groupid = "412038";
+  }else if(serverCode == 'fuzhou_db'){  //福建
+    groupid = "422987";
+  }else if(serverCode == 'anhui_db'){  //安徽
+    groupid = "407860";
+  }else if(serverCode == 'shanxi1_db'){  //山西
+    groupid = "429225";
+  }else if(serverCode == 'shanghai_db'){  //上海
+    groupid = "424993";
+  }else if(serverCode == 'hunan_db'){  //湖南
+    groupid = "409080";
+  }else if(serverCode == 'zspk_db'){  //掌上扑克
+    groupid = "424995";
+  }else if(serverCode == 'zhejiang_db'){  //浙江
+    groupid = "415887";
+  }else if(serverCode == 'hebei_db'){  //河北
+    groupid = "406642";
+  }else if(serverCode == 'guangdong_db'){  //广东
+    groupid = "419347";
+  }else if(serverCode == 'guizhou_db'){  //贵州
+    groupid = "369609";
+  }else if(serverCode == 'hainan_db'){  //海南
+    groupid = "409102";
+  }else if(serverCode == 'shandong_db'){  //山东
+    groupid = "444975";
+  }else if(serverCode == 'guangxi_db'){  //广西
+    groupid = "409081";
+  }else if(serverCode == 'henan_db'){  //河南
+    groupid = "406645";
+  }else if(serverCode == 'jiangsu_db'){  //江苏
+    groupid = "432501";
+  }else if(serverCode == 'sichuan_db'){  //四川
+    groupid = "409082";
+  }else if(serverCode == 'neimenggu_db'){  //内蒙古
+    groupid = "421076";
+  }else if(serverCode == 'ganzhou_db'){  //赣州
+    groupid = "417857";
+  }else if(serverCode == 'jiangxi_db'){  //江西
+    groupid = "420154";
+  }else if(serverCode == 'yunnan_db'){  //云南
+    groupid = "416922";
+  }else if(serverCode == 'ningxia_db'){  //宁夏
+    groupid = "417855";
+  }else if(serverCode == 'hubei_db'){  //湖北
+    groupid = "441800";
+  }else if(serverCode == 'jiangxi_yichun_db'){  //赣西
+    groupid = "534881";
+  }else if(serverCode == 'taiwan_db'){  //台湾
+    groupid = "447199";
+  }else if(serverCode == 'yunnan_qujing_db'){  //曲靖
+    groupid = "534879";
+  }else if(serverCode == 'yunnan_chuxiong_db'){  //楚雄
+    groupid = "536487";
+  }
+  $.ajax({
+  	url: '/gameapi/getUserInfo?t=' + Math.random(),
+  	type: 'GET',
+  	dataType: 'JSON',
+  	success: function(response) {
+  		if(response.enable=='forbidding'){
+  		     //郭敏辉
+          //	window.location.href='/login/logout?t=1516859636988';
+  		}else{
+        card = response.cardNum;
+        kefu(name,agentId,serverName,tel,card,groupid);
+  		}
+  	},
+  	error: function() {
+          //guominhui
+  		// bootbox.alert({
+  		// 	buttons: {
+  		// 		ok: {
+  		// 			label: '确认',
+  		// 			className: 'btn green'
+  		// 		}
+  		// 	},
+  		// 	message: '请求失败，请联系管理员',
+  		// 	callback: function() {}
+  		// });
+          //郭敏辉
+  	}
+  });
+})
+        </script>
+				<script>
+					$(document).ready(function() {
+                        //暂时增加内容
+                        $("#lamp").show()
+                                        var str = '<p style="color:#808080;">' +'测试文字'+ '</p>';
+                                        $("#marquee").append(str);
+                                    document.getElementById("marquee").start()
+                        //暂时增加内容
+					    $("#center_container").css({"padding-top":$("#logo").height()})
+					    //获取代理信息
+                        $.ajax({
+                            url: '/agent/detail/info?t=' + Math.random(),
+                            type: 'get',
+                            dataType: 'JSON',
+                            data: {
+                                type: 'upnotice'
+                            },
+                            success: function(response) {
+								$("#card2").html(response.card2);
+								$("#agentId").html(response.agentId);
+								$("#gameName").html(response.gameName)
+                            },
+                            error: function() {
+                                //郭敏辉
+                                // bootbox.alert({
+                                //     buttons: {
+                                //         ok: {
+                                //             label: '确认',
+                                //             className: 'btn green'
+                                //         }
+                                //     },
+                                //     message: '请求失败，请联系管理员',
+                                //     callback: function() {}
+                                // });
+                            }
+                        });
+                        ///升级通知
+                        $.ajax({
+                            url: '/agent/getNoticeByType?t=' + Math.random(),
+                            type: 'post',
+                            dataType: 'JSON',
+                            data: {
+                                type: 'upnotice'
+                            },
+                            success: function(response) {
+                                if(response==null||response==false||response==''){
+                                    return false;
+                                }
+                                if(response.length != 0) {
+                                    $("#lamp").show()
+                                    for(var i = 0; i < response.length; i++) {
+                                        var str = '<p style="color:#808080;">' + response[i].comment + '</p>';
+                                        $("#marquee").append(str);
+                                    }
+                                    document.getElementById("marquee").start()
+                                }
+
+                            }
+                        });
+
+                        ///通知
+                        $.ajax({
+                            url: '/agent/getNoticeByType?t=' + Math.random(),
+                            type: 'post',
+                            dataType: 'JSON',
+                            data: {
+                                type: 'agentnotice'
+                            },
+                            success: function(response) {
+                                if(response==null||response==false||response==''){
+                                    return false;
+                                }
+                                if(response.length == 0) {
+                                    $("#tips").html('暂无活动！');
+                                }else{
+									$("#tips").html(response[0].name)
+                                    $("#toTips").on("click",function () {
+                                        window.location.href = "/center/toNotice?t=1516859636988";
+                                    })
+								}
+
+                            }
+                        });
+
+                        //获取代理活动配置/activity/config/getInfo
+                        $.ajax({
+                            url: '/activity/config/getInfo?t=t=1516859636988',
+                            type: 'get',
+                            dataType: 'JSON',
+                            success: function(response) {
+                                var showRed = false;
+                                var time = "";
+                                var text = "";
+                                var type = "";
+                                if(response.datas.activityList.length != 0){
+                                    var data =  response.datas.activityList;
+                                    type = data[0].rtype;
+                                    curActivity = data[0].rtype;
+                                    for(var i=0;i<data.length;i++){
+                                        var temp = JSON.parse(data[i].message)
+                                        //是否展示红点
+                                        if(!showRed){
+                                            showRed = data[i].showRed;
+                                        }
+                                        time += '<div style="display:none" id="rtypeTime'+data[i].rtype+'">'+data[i].startTime+'-'+data[i].endTime+'</div>'
+                                        //俱乐部创建活动
+                                        if(data[i].rtype == 0){
+
+                                        }
+                                        //俱乐部拉新活动
+                                        if(data[i].rtype == 1){
+                                            text += '<div style="display:none;" id="rtypeText'+data[i].rtype+'">活动期间，代理俱乐部中的新增成员首次达到'+temp.rtype0.userNum+'人、'+temp.rtype1.userNum+'人、'+temp.rtype2.userNum+'人、'+temp.rtype3.userNum+'人时，可分别获得<span style="color:#ef6615;font-weight: bold ">'+temp.rtype0.cardNum+' </span>张、<span style="color:#ef6615;font-weight: bold ">'+temp.rtype1.cardNum+' </span>张、<span style="color:#ef6615;font-weight: bold ">'+temp.rtype2.cardNum+' </span>张、<span style="color:#ef6615;font-weight: bold ">'+temp.rtype3.cardNum+' </span>张房卡赠送。</div>'
+                                            $("#consumption_list").append('<div class="consumption_out" id="invitation"><p>拉新奖励活动</p></div>')
+                                            $("#invitation").show()
+                                        }
+                                        //俱乐部消耗活动
+                                        if(data[i].rtype == 2){
+                                            text += '<div style="display:none;" id="rtypeText'+data[i].rtype+'">活动期间，每个俱乐部每天消耗指定数量的房卡，会有<span style="color:#ef6615;font-weight: bold ">'+temp.rtype0.cardNum+' </span>张、<span style="color:#ef6615;font-weight: bold ">'+temp.rtype1.cardNum+' </span>张、<span style="color:#ef6615;font-weight: bold ">'+temp.rtype2.cardNum+' </span>张、或<span style="color:#ef6615;font-weight: bold ">'+temp.rtype3.cardNum+' </span>张房卡赠送。</div>'
+                                            $("#consumption_list").append('<div class="consumption_out" id="consume"><p>耗卡奖励活动</p></div>')
+                                            $("#consume").show()
+                                        }
+
+                                    }
+                                }
+
+                                //是否展示活动中心
+                                if(response.datas.showTip){
+                                    $("#activity_center").css({"display":"inline-block"})
+                                }
+                                //是否展示活动中心红点
+                                if(showRed){
+                                    $("#activity_center_bg").attr("src",'image/activity_center_red.png');
+                                }
+                                //是否展示弹窗
+                                if(response.datas.showWindow){
+                                    $("#consumption").show();
+                                }
+                                //默认展示哪个活动
+                                if(type == 1){
+                                    $("#invitation").addClass("consumption_on")
+                                }
+                                if(type == 2){
+                                    $("#consume").addClass("consumption_on")
+                                }
+                                $("#consumption_time").html(time)
+                                $("#consumption_text").html(text)
+                                //$("#consumption").show();
+                                $("#rtypeText"+type).show()
+                                $("#rtypeTime"+type).show()
+                                var activityList = ["#invitation","#consume"];
+                                for(var i=0;i<activityList.length;i++){
+                                    $(activityList[i]).on("click",{index:i},function (e) {
+                                        for(var j=0;j<activityList.length;j++){
+                                            $(activityList[j]).removeClass("consumption_on")
+                                        }
+                                        //拉新活动
+                                        if(e.data.index == 0){
+                                            $("#rtypeText1").show()
+                                            $("#rtypeTime1").show()
+                                            $("#rtypeText2").hide()
+                                            $("#rtypeTime2").hide()
+                                            //拉新活动
+                                            curActivity = 1;
+                                        }
+                                        //耗卡活动
+                                        if(e.data.index == 1){
+                                            $("#rtypeText2").show()
+                                            $("#rtypeTime2").show()
+                                            $("#rtypeText1").hide()
+                                            $("#rtypeTime1").hide()
+                                            //耗卡活动
+                                            curActivity =2;
+                                        }
+                                        $(this).addClass("consumption_on")
+                                    })
+                                }
+                            },
+                            error: function() {
+                              //郭敏辉  window.location.href = "/login/logout?t=1516859636988";
+                            }
+                        });
+
+                        //关闭活动弹窗
+                        $("#activity_close").on("click",function (e) {
+                            e=e||event;
+                            e.stopPropagation();
+                            $("#activity").hide();
+                        });
+                        //去活动细节
+                        $("#activity_go").on("click",function (e) {
+                            e=e||event;
+                            e.stopPropagation();
+                            var type = $(this).attr("rtype");
+                            //俱乐部拉新活动
+                            if(type == 1){
+                                window.location.href = "/gonghui/index.html#/rewardDetail?t=1516859636988";
+                            }
+
+                        });
+
+                        //去活动中心
+                        $("#activity_center").on("click",function(e){
+                            e=e||event;
+                            e.stopPropagation();
+                            window.location.href = "/gonghui/index.html#/affairCenter?t=1516859636988"
+                        });
+
+                        $("#consumption_close").on("click",function () {
+                            $("#consumption").hide();
+                        });
+                        $("#consumption_to").on("click",function () {
+                            if(curActivity ==1){
+                                window.location.href = "/gonghui/index.html#/rewardDetail?t=1516859636988"
+                            }
+                            if(curActivity ==2){
+                                window.location.href = "/gonghui/index.html#/consumeActivityIndex?t=1516859636988"
+                            }
+                        });
+                        $('#kf').on("click",function () {
+                            $("#YSF-BTN-HOLDER").click();
+                        });
+					});
+				</script>
+				<script src="js/commen/logout.js" type="text/javascript"></script>
+				</body>
+
+				<!-- END BODY -->
+
+				</html>

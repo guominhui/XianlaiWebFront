@@ -1,0 +1,316 @@
+@charset "UTF-8";
+.cf:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.page-content {
+	padding: 10px !important;
+}
+
+.badge {
+	background: #212121 !important;
+	padding-right:0!important;
+	/*display: block;
+	text-align: center;*/
+}
+
+.more {
+	display: inline-block!important;
+	padding: 0!important;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.plus {
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+}
+
+.player-head {
+	display: inline-block;
+	background-color: #fc5b5b;
+	border-radius: 6px !important;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	padding: 0px 10px;
+}
+
+.nav-box {
+	background: #fff;
+	padding: 0px 10px;
+}
+
+.bind-account {
+	float: right;
+	color: #FFF;
+	line-height: 30px;
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+}
+
+.head-portrait {
+	float: left;
+}
+
+.head-info {
+	float: left;
+}
+
+.head-info li {
+	line-height: 30px;
+}
+
+.head-info li label {
+	display: inline;
+}
+
+.await {
+	text-align: center;
+	font-size: 24px;
+	color: #BC0D0E;
+	margin-top: 40px;
+}
+
+.vip_box {
+	border-top: 1px solid #CCC;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.vip_box>p {
+	line-height: 24px;
+	margin-top: 10px;
+	padding: 0px 20px;
+	text-align: center;
+}
+
+.btn-confirm,
+.btn-confirm:hover,
+.btn-confirm:active {
+	border-radius: 16px !important;
+	background: #F9C;
+	outline: none;
+	display: inline-block;
+	margin: 20px auto;
+	padding: 8px 38px;
+	border: 1px solid #797979;
+	color: #000;
+	text-decoration: none;
+}
+
+.form-c {
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.form-c label,
+.form-c input,
+.form-c select {
+	float: left;
+	margin-bottom: 0px;
+}
+
+.form-c label {
+	width: 40%;
+	line-height: 30px;
+	text-align: right;
+}
+
+.form-c input,
+.form-c select {
+	width: 55%;
+	height: 30px;
+	box-sizing: border-box;
+}
+
+
+/****菜单*****/
+
+.header .navbar-inner {
+	background-color: #FFF !important;
+}
+
+.header .nav> li.dropdown,
+.header .nav> li.dropdown> a {
+	padding-left: 0px;
+}
+
+.header .nav> li.dropdown .dropdown-toggle {
+	background-color: #212121 !important;
+}
+
+.header .navbar-inner .container-fluid,
+.header .navbar-inner .container {
+	margin-left: 0px !important;
+}
+
+.portlet.box .portlet-title> .actions> .btn> i {
+	color: #FFF !important;
+	margin: 0px 5px;
+}
+
+@media (min-width: 980px) {
+	.page-content {
+		margin-left: 0px;
+		margin-top: 0px;
+		min-height: 760px;
+	}
+}
+
+.footer {
+	/*position: fixed;
+	bottom: 0px;
+	left: 0px;*/
+	width: 100%;
+	box-sizing: border-box;
+	background: #3D3D3D;
+}
+
+
+/*gameRecharge.css*/
+
+.re-pay {
+	border-bottom: 1px solid #000;
+	padding: 5px 10px;
+}
+
+.re-pay label {
+	font-size: 16px;
+}
+
+.re-pay .pay_item {
+	width: 100%;
+	margin: 0px;
+}
+
+.re-pay .pay_item li {
+	height: 100px;
+	float: left;
+	width: 32.33%;
+	border: 2px solid #CCC;
+	border-radius: 10px !important;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-right: 1%;
+	margin-bottom: 2%;
+	padding: 20px 0;
+	cursor: pointer;
+}
+
+.re-pay .pay_item li.active {
+	border: 2px solid #0000FF;
+	color: #0000FF;
+}
+.re-pay .pay_item li.hot {
+	background: url("../img/market/hot.png") no-repeat top left;
+}
+.re-pay .pay_item li.act {
+	background: url("../img/market/act.png") no-repeat top left;
+}
+.re-pay .pay_item li.new {
+	background: url("../img/market/new.png") no-repeat top left;
+}
+.re-pay .pay_item li.first {
+	background: url("../img/market/first.png") no-repeat top left;
+}
+@media (max-width: 640px) {
+	.re-pay .pay_item li {
+		background-size: 30px 30px!important;
+	}
+}
+
+.re-pay .pay_item li.active p {
+	color: #0000FF;
+}
+
+.re-pay .pay_item li p {
+	text-align: center;
+	line-height: 100%;
+	font-size: 10px;
+	margin-bottom: 0px;
+}
+
+.re-pay .pay_item li p.pay_sum {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.re-pay .pay_item li p.pay_cards {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.re-pay .pay_item li p.pay_price {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.re-pay .re-pay-type {
+	margin: 10px 0px 0px 0px;
+}
+
+.re-pay .alipay {
+	float: left;
+	display: inline;
+	position: relative;
+	margin: 0 10px 10px 0;
+	background: url(../image/zfb.png) no-repeat center center;
+	border: 1px solid #DDDDDD;
+	width: 130px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.re-pay .wxpay {
+	float: left;
+	display: inline;
+	position: relative;
+	margin: 0 10px 10px 0;
+	background: url(../image/wx.png) no-repeat center center;
+	border: 1px solid #DDDDDD;
+	width: 130px;
+	height: 38px;
+	cursor: pointer;
+	background-size: 100% auto;
+}
+/* .re-pay .wxpay i{
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: 132px;
+	height: 40px;
+	background: url(../image/bank-check.png) no-repeat center center;
+}
+.re-pay .alipay i {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: 132px;
+	height: 40px;
+	background: url(../image/bank-check.png) no-repeat center center;
+} */
+
+.re-btn {
+	padding: 8px 30px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.payselected{
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: 132px;
+	height: 40px;
+	background: url(../image/bank-check.png) no-repeat center center;
+}
